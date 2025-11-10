@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(25px);
-    border: 1px solid rgba(76, 175, 80, 0.2);
+    border: 1px solid rgba(139, 0, 0, 0.2);
     border-radius: 24px;
     min-height: 100vh;
     position: relative;
@@ -36,9 +36,9 @@ body {
 .status-dot {
     width: 8px;
     height: 8px;
-    background: #4CAF50;
+    background: #8b0000;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(76, 175, 80, 0.8);
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.8);
 }
 
 /* バナー */
@@ -141,9 +141,9 @@ body {
 .profile-name {
     font-size: 36px;
     font-weight: 800;
-    color: #4CAF50;
+    color: #8b0000;
     text-align: center;
-    text-shadow: 0 3px 6px rgba(76, 175, 80, 0.4);
+    text-shadow: 0 3px 6px rgba(139, 0, 0, 0.4);
     margin-bottom: 8px;
     letter-spacing: -1px;
 }
@@ -163,7 +163,35 @@ body {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.department {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.motto {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(139, 0, 0, 0.15);
+    border: 1px solid rgba(139, 0, 0, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.motto p {
+    font-size: 15px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    line-height: 1.6;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -228,9 +256,9 @@ body {
 }
 
 .btn-secondary {
-    background: rgba(76, 175, 80, 0.2);
-    color: #4CAF50;
-    border: 1px solid rgba(76, 175, 80, 0.4);
+    background: rgba(139, 0, 0, 0.2);
+    color: #8b0000;
+    border: 1px solid rgba(139, 0, 0, 0.4);
     padding: 16px 24px;
     border-radius: 12px;
     font-size: 16px;
@@ -246,10 +274,10 @@ body {
 }
 
 .btn-secondary:hover {
-    background: rgba(76, 175, 80, 0.3);
-    border-color: rgba(76, 175, 80, 0.6);
+    background: rgba(139, 0, 0, 0.3);
+    border-color: rgba(139, 0, 0, 0.6);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 6px 20px rgba(139, 0, 0, 0.3);
 }
 
 /* ソーシャルリンク */
@@ -289,6 +317,14 @@ body {
     margin-right: 16px;
     font-size: 18px;
     color: white;
+    overflow: hidden;
+}
+
+.social-icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .social-icon.github {
@@ -296,7 +332,7 @@ body {
 }
 
 .social-icon.twitter {
-    background: #1da1f2;
+    background: transparent;
 }
 
 .social-icon.linkedin {
@@ -345,9 +381,9 @@ body {
 }
 
 .tab-btn {
-    background: rgba(76, 175, 80, 0.2);
-    color: #4CAF50;
-    border: 1px solid rgba(76, 175, 80, 0.4);
+    background: rgba(139, 0, 0, 0.2);
+    color: #8b0000;
+    border: 1px solid rgba(139, 0, 0, 0.4);
     padding: 10px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -359,18 +395,18 @@ body {
 }
 
 .tab-btn.active {
-    background: rgba(76, 175, 80, 0.5);
+    background: rgba(139, 0, 0, 0.5);
     color: #ffffff;
-    border-color: rgba(76, 175, 80, 0.7);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    border-color: rgba(139, 0, 0, 0.7);
+    box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
     transform: translateY(-1px);
 }
 
 .tab-btn:hover {
-    background: rgba(76, 175, 80, 0.35);
-    border-color: rgba(76, 175, 80, 0.6);
+    background: rgba(139, 0, 0, 0.35);
+    border-color: rgba(139, 0, 0, 0.6);
     transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
 }
 
 .tab-content {
@@ -380,9 +416,9 @@ body {
 .tab-panel {
     display: none;
     padding: 20px;
-    background: rgba(76, 175, 80, 0.05);
+    background: rgba(139, 0, 0, 0.05);
     border-radius: 16px;
-    border: 1px solid rgba(76, 175, 80, 0.2);
+    border: 1px solid rgba(139, 0, 0, 0.2);
     backdrop-filter: blur(10px);
 }
 
@@ -392,7 +428,7 @@ body {
 }
 
 .tab-panel h3 {
-    color: #4CAF50;
+    color: #8b0000;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -406,21 +442,61 @@ body {
     font-size: 14px;
 }
 
+/* 画像ギャラリー */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* 正方形のアスペクト比 */
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(139, 0, 0, 0.1);
+    border: 1px solid rgba(139, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
+    border-color: rgba(139, 0, 0, 0.4);
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
 /* 活動・実績アイテム */
 .activity-item, .achievement-item {
     display: flex;
     align-items: flex-start;
     padding: 15px;
-    background: rgba(76, 175, 80, 0.05);
+    background: rgba(139, 0, 0, 0.05);
     border-radius: 12px;
     margin-bottom: 12px;
-    border: 1px solid rgba(76, 175, 80, 0.15);
+    border: 1px solid rgba(139, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
 .activity-item:hover, .achievement-item:hover {
-    background: rgba(76, 175, 80, 0.1);
-    border-color: rgba(76, 175, 80, 0.3);
+    background: rgba(139, 0, 0, 0.1);
+    border-color: rgba(139, 0, 0, 0.3);
     transform: translateX(4px);
 }
 
@@ -433,9 +509,9 @@ body {
     justify-content: center;
     margin-right: 15px;
     font-size: 16px;
-    color: #4CAF50;
-    background: rgba(76, 175, 80, 0.1);
-    border: 1px solid rgba(76, 175, 80, 0.3);
+    color: #8b0000;
+    background: rgba(139, 0, 0, 0.1);
+    border: 1px solid rgba(139, 0, 0, 0.3);
     flex-shrink: 0;
     min-width: 40px;
     min-height: 40px;
@@ -458,7 +534,11 @@ body {
 
 /* 電話アイコン */
 .social-icon.phone {
-    background: #4CAF50;
+    background: #8b0000;
+}
+
+.social-icon.website {
+    background: transparent;
 }
 
 .social-icon.facebook {
@@ -508,8 +588,8 @@ body {
     .profile-name {
         font-size: 28px;
         font-weight: 800;
-        color: #4CAF50;
-        text-shadow: 0 2px 4px rgba(76, 175, 80, 0.4);
+        color: #8b0000;
+        text-shadow: 0 2px 4px rgba(139, 0, 0, 0.4);
     }
     
     .title {
@@ -606,8 +686,8 @@ body {
     .profile-name {
         font-size: 32px;
         font-weight: 800;
-        color: #4CAF50;
-        text-shadow: 0 2px 4px rgba(76, 175, 80, 0.4);
+        color: #8b0000;
+        text-shadow: 0 2px 4px rgba(139, 0, 0, 0.4);
     }
     
     .title {
@@ -672,8 +752,8 @@ body {
     .profile-name {
         font-size: 34px;
         font-weight: 800;
-        color: #4CAF50;
-        text-shadow: 0 2px 4px rgba(76, 175, 80, 0.4);
+        color: #8b0000;
+        text-shadow: 0 2px 4px rgba(139, 0, 0, 0.4);
     }
     
     .title {
@@ -757,8 +837,8 @@ body {
     .profile-name {
         font-size: 40px;
         font-weight: 800;
-        color: #4CAF50;
-        text-shadow: 0 3px 6px rgba(76, 175, 80, 0.4);
+        color: #8b0000;
+        text-shadow: 0 3px 6px rgba(139, 0, 0, 0.4);
     }
     
     .title {
@@ -814,17 +894,17 @@ body {
     /* ホバー効果の強化 */
     .social-link:hover {
         transform: translateX(8px);
-        box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+        box-shadow: 0 8px 25px rgba(139, 0, 0, 0.15);
     }
     
     .btn-primary:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        box-shadow: 0 8px 25px rgba(139, 0, 0, 0.4);
     }
     
     .btn-secondary:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 25px rgba(139, 0, 0, 0.1);
     }
 }
 
@@ -883,9 +963,9 @@ body {
 }
 
 .toggle-btn {
-    background: rgba(76, 175, 80, 0.1);
-    color: #4CAF50;
-    border: 1px solid rgba(76, 175, 80, 0.3);
+    background: rgba(139, 0, 0, 0.1);
+    color: #8b0000;
+    border: 1px solid rgba(139, 0, 0, 0.3);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
@@ -900,10 +980,10 @@ body {
 }
 
 .toggle-btn:hover {
-    background: rgba(76, 175, 80, 0.2);
-    border-color: rgba(76, 175, 80, 0.5);
+    background: rgba(139, 0, 0, 0.2);
+    border-color: rgba(139, 0, 0, 0.5);
     transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
 }
 
 .toggle-icon {
@@ -917,7 +997,7 @@ body {
 .intro-detail {
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid rgba(76, 175, 80, 0.2);
+    border-top: 1px solid rgba(139, 0, 0, 0.2);
 }
 
 /* フッター */
@@ -1080,7 +1160,7 @@ body {
     gap: 8px;
     width: 100%;
     padding: 14px 20px;
-    background: #4CAF50;
+    background: #8b0000;
     color: #fff;
     text-decoration: none;
     border: 0;
@@ -1091,9 +1171,9 @@ body {
 }
 
 .modal-button:hover {
-    background: #45a049;
+    background: #a52a2a;
     transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
 }
 
 .modal-close-button {
