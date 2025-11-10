@@ -9,6 +9,16 @@
     <meta name="apple-mobile-web-app-title" content="安藤天晟">
     <title>安藤天晟 - プロフィール</title>
     
+    <!-- OGPメタタグ: 画像を明示的に無効化 -->
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="0">
+    <meta property="og:image:height" content="0">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="">
+    
+    <!-- 画像のインデックスを防ぐ -->
+    <meta name="robots" content="noimageindex">
+    
     <!-- ホーム画面追加用のアイコン設定 -->
     <link rel="apple-touch-icon" href="lC0xkPJZ.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="lC0xkPJZ.jpg">
@@ -99,7 +109,7 @@
                     <div id="images" class="tab-panel">
                         <div class="image-gallery">
                             <div class="gallery-item">
-                                <img src="IMG_8563.jpeg" alt="画像" class="gallery-image clickable-image" onclick="openImageModal('IMG_8563.jpeg', '')">
+                                <img src="IMG_8563.jpeg" alt="画像" class="gallery-image clickable-image" onclick="openImageModal('IMG_8563.jpeg', '')" data-no-og="true">
                             </div>
                         </div>
                     </div>
@@ -162,7 +172,7 @@
 
                 <a href="https://x.com/anten6595?s=21&t=DcdmkjzSZkNn5cEyOK1X8w" class="social-link" target="_blank">
                     <div class="social-icon twitter">
-                        <img src="lC0xkPJZ.jpg" alt="X" class="social-icon-image">
+                        <img src="lC0xkPJZ.jpg" alt="X" class="social-icon-image" data-no-og="true" loading="lazy">
                     </div>
                     <div class="social-info">
                         <div class="social-name">X</div>
@@ -188,7 +198,7 @@
 
                 <a href="https://www.vir-corporation.com/" class="social-link" target="_blank">
                     <div class="social-icon website">
-                        <img src="IMG_8563.jpeg" alt="会社ホームページ" class="social-icon-image">
+                        <img src="IMG_8563.jpeg" alt="会社ホームページ" class="social-icon-image" data-no-og="true" loading="lazy">
                     </div>
                     <div class="social-info">
                         <div class="social-name">会社ホームページ</div>
