@@ -276,11 +276,6 @@ ORG:株式会社Vir
 TITLE:専務取締役執行役員
 EMAIL:tensei.ando@vueloo.us
 URL:https://andotensei-lotuscard.vercel.app
-URL:https://www.instagram.com/anten65_95
-URL:https://www.facebook.com/share/14MwfeqFRLH/
-URL:https://x.com/anten6595
-URL:https://www.linkedin.com/in/tenseiando
-URL:https://www.vir-corporation.com/
 NOTE:営業本部 / アメフト高校日本一`;
 
         // プロフィール画像がある場合のみ追加
