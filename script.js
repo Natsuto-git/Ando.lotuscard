@@ -270,10 +270,12 @@ async function downloadContactFromModal() {
         // vCardを作成
         let vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:安藤天晟
+FN:安藤　天晟
+N:天晟;安藤;;;
 ORG:株式会社Vir
 TITLE:専務取締役執行役員
 EMAIL:tensei.ando@vueloo.us
+URL:https://andotensei-lotuscard.vercel.app
 URL:https://www.instagram.com/anten65_95
 URL:https://www.facebook.com/share/14MwfeqFRLH/
 URL:https://x.com/anten6595
